@@ -1,0 +1,41 @@
+<?php 
+
+////////////////////////////////////////////////////////////////////////////
+	function ola($texto){
+		return "ola $texto <br>";
+	}
+
+	echo ola("mundo");
+	echo ola("matheus");
+
+
+////////////////////////////////////////////////////////////////////////////
+	function ola2 ($texto = "mundo"){
+		return "ola $texto <br>";
+	}
+
+	echo ola2();
+	echo ola2("Hcode");
+
+
+////////////////////////////////////////////////////////////////////////////
+	function ola3 ($texto = "mundo" , $periodo = "bom dia"){
+		return "Ola $texto! $periodo! <br>";
+	}
+
+	echo ola3();
+
+
+////////////////////////////////////////////////////////////////////////////
+	function ola4 ($texto = "mundo" , $periodo = "bom dia"){
+		return "ola $texto! $periodo! <br>";
+	}
+
+	echo ola4();
+	echo ola4("","Boa noite");
+	echo ola4("Matheus","");
+	echo ola4("Miguel","Madrugada");
+
+
+////////////////////////////////////////////////////////////////////////////
+ ?>
